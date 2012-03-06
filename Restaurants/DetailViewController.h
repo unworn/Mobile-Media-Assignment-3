@@ -27,4 +27,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *star4;
 @property (weak, nonatomic) IBOutlet UIImageView *star5;
 
+@property (weak, nonatomic) IBOutlet UILabel *textLabel;
+@property (weak, nonatomic) IBOutlet UILabel *reviewerLabel;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+
 @end

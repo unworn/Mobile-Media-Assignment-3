@@ -10,16 +10,19 @@
 
 @interface Review : NSObject
 {
-    NSString* reviewText;
-    NSString* reviewer;
-    int helpfulCount;
+    NSString* reviewerName;
+    NSString* text;
+    int score;
+    int numberOfHelpfulReviews;
+    int numberOfUnhelpfulReviews;
 }
 
-@property(readwrite, strong) NSString* reviewText;
-@property(readwrite, strong) NSString* reviewer;
-@property(readwrite) bool helpful;
+@property(readwrite, strong) NSString* text;
+@property(readwrite, strong) NSString* reviewerName;
+@property(readwrite) int score;
+@property(readwrite) int numberOfHelpfulReviews;
+@property(readwrite) int numberOfUnhelpfulReviews;
 
--(int)helpfulCount;
 
 @end
 
