@@ -15,6 +15,7 @@
     int score;
     int numberOfHelpfulReviews;
     int numberOfUnhelpfulReviews;
+    float helpfulPercentage;
 }
 
 @property(readwrite, strong) NSString* text;
@@ -22,6 +23,7 @@
 @property(readwrite) int score;
 @property(readwrite) int numberOfHelpfulReviews;
 @property(readwrite) int numberOfUnhelpfulReviews;
+-(float) helpfulPercentage;
 
 
 @end

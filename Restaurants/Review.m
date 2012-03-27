@@ -11,4 +11,8 @@
 @implementation Review
 @synthesize text, reviewerName, score, numberOfHelpfulReviews, numberOfUnhelpfulReviews;
 
+
+-(float) helpfulPercentage{
+    return numberOfHelpfulReviews*100 - numberOfUnhelpfulReviews*100;
+}
 @end
