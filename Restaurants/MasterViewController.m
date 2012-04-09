@@ -26,7 +26,10 @@
 {
     
     [super viewDidLoad];
+
     Restaurant* piopio = [[Restaurant alloc] init];
+    restaurants = [[NSMutableArray alloc] init];
+    
     
     piopio.name = @"Pio Pio";
     piopio.address = @"746 First Avenue\nNew York, NY 10128";

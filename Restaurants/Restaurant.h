@@ -17,7 +17,9 @@
     
     Review* bestReview;
 }
-@property(readwrite, strong) NSMutableArray* reviews;
+@property(readwrite, strong) NSMutableArray *reviews;
+
+
 @property(readwrite, strong) NSString* address;
 @property(readwrite, strong) NSString* name;
 @property(readwrite, strong) NSString* cuisineType;
