@@ -2,8 +2,8 @@
 //  Review.h
 //  Restaurants
 //
-//  Created by Nidhi Malhotra on 2/27/12.
-//  Copyright (c) 2012 Unworn Studio. All rights reserved.
+//  Created by Michelle Kirby on 3/5/12.
+//  Copyright (c) 2012 Parsons The New School. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,20 +12,21 @@
 {
     NSString* reviewerName;
     NSString* text;
+    
     int score;
-    int numberOfHelpfulReviews;
-    int numberOfUnhelpfulReviews;
-    float helpfulPercentage;
+    int numberOfHelpfulRatings;
+    int numberOfUnhelpfulRatings;
 }
 
-@property(readwrite, strong) NSString* text;
-@property(readwrite, strong) NSString* reviewerName;
-@property(readwrite) int score;
-@property(readwrite) int numberOfHelpfulReviews;
-@property(readwrite) int numberOfUnhelpfulReviews;
+-(int) totalReview;
 -(float) helpfulPercentage;
+@property(readwrite, strong) NSString* text;
+@property(readwrite, strong) NSString* reviewer;
+@property(readwrite) int score;
+@property(readwrite) int numberOfHelpfulRatings;
+@property(readwrite) int numberOfunhelpfulRatings;
+
+
 
 
 @end
-
-
