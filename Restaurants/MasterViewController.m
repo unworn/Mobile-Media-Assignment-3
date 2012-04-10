@@ -28,8 +28,13 @@
     [super viewDidLoad];
 
     Restaurant* piopio = [[Restaurant alloc] init];
-    restaurants = [[NSMutableArray alloc] init];
+    Restaurant* numpang = [[Restaurant alloc] init];
+    Restaurant* bedford = [[Restaurant alloc] init];
     
+    restaurants = [[NSMutableArray alloc] init];
+    //restaurants = [[NSMutableArray alloc] initWithObjects:piopio, numpang, something, somethingelse, nil];
+    
+    restaurants = [[NSMutableArray alloc] initWithObjects:piopio, numpang, bedford, nil];
     
     piopio.name = @"Pio Pio";
     piopio.address = @"746 First Avenue\nNew York, NY 10128";
@@ -135,8 +140,10 @@
 
 -(int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return 3;
 }
+
+
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath
                                                                               *)indexPath
