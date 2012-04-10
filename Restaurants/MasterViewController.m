@@ -150,9 +150,14 @@
 {
     NSString* cellIdentifier = @"RestaurantCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    cell.textLabel.text = @"Pio Pio";
-    cell.detailTextLabel.text = @"Peruvian";
+    
+    Restaurant* currentRestaurant = [restaurants objectAtIndex:indexPath.row];
+    cell.textLabel.text = currentRestaurant.name;
+    cell.detailTextLabel.text = currentRestaurant.cuisineType;
     return cell;
+//    cell.textLabel.text = @"Pio Pio";
+//    cell.detailTextLabel.text = @"Peruvian";
+//    return cell;
 }
 
 
