@@ -12,6 +12,8 @@
 {
     Restaurant* restaurant;
     Review* review;
+    NSMutableArray *reviews;
+    NSMutableArray *restaurants;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *addressLabel;
@@ -27,5 +29,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *star4;
 @property (weak, nonatomic) IBOutlet UIImageView *star5;
 @property (weak, nonatomic) IBOutlet UILabel *reviewLabel;
+
+@property (weak, nonatomic) IBOutlet NSMutableArray *restaurants;
+@property (weak, nonatomic) IBOutlet NSMutableArray *reviews;
 
 @end

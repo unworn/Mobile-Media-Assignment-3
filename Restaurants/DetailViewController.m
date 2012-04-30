@@ -20,6 +20,8 @@
 @synthesize star5;
 @synthesize reviewLabel;
 
+
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
